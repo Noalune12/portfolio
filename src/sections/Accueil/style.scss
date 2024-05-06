@@ -22,7 +22,7 @@
         justify-content: center;
         gap: 10px;
         overflow: hidden; /* Cache le texte en dehors de la zone de visualisation */
-        p {
+        p, h1 {
             padding-left: 60px;
         }
         .my-name {

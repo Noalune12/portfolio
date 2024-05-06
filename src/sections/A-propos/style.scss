@@ -1,0 +1,18 @@
+@import '../../variables.scss';
+
+.a-propos {
+    height: 900px;
+    background-color: $purple-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    .a-propos-section {
+        text-align: center;
+    }
+    .a-propos-competences {
+        text-align: center;
+    }
+}

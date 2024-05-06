@@ -1,8 +1,9 @@
 import { useFetch } from '../../utils/usefetch'
-import React, { useEffect } from 'react';
+import React from 'react';
 import Loading from '../../components/Loading';
 import Error from '../../components/Error';
 import Accueil from '../../sections/Accueil';
+import Apropos from '../../sections/A-propos';
 
 
 function Home () {
@@ -20,6 +21,7 @@ function Home () {
         return (
     <div className='home-page'>
         <Accueil />
+        <Apropos />
         {/* <h1>Projets</h1>
         <div className='projets'>
             {projets.data.map((projet, index) => (

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
 import './style.scss';
 import Logo from '../../assets/lab-logo.png';
 import React, { useEffect, useState } from 'react';
@@ -23,21 +22,79 @@ function Header () {
     const handleScroll = () => {
         if (window.scrollY > 0) {
             setScrolled(true);
+            updateActiveSection();
         } else {
             setScrolled(false);
         }
     };
+
+
+    // const [activeLink, setActiveLink] = useState('');
+
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //     const sections = document.querySelectorAll('section');
+    //     let current = '';
+    //     sections.forEach(section => {
+    //         const sectionTop = section.offsetTop;
+    //         const sectionHeight = section.clientHeight;
+    //         if (window.scrollY >= sectionTop - sectionHeight / 3) {
+    //         current = section.id;
+    //         }
+    //     });
+    //     setActiveLink(current);
+    //     };
+
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => {
+    //     window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
+
+    // const scrollToSection = (id) => {
+    //     const section = document.getElementById(id);
+    //     window.scrollTo({
+    //     top: section.offsetTop,
+    //     behavior: 'smooth'
+    //     });
+    // };
+    const [activeSection, setActiveSection] = useState('');
+
+    const updateActiveSection = () => {
+        const sections = document.querySelectorAll('section');
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= sectionTop - sectionHeight / 2) {
+                current = section.id;
+            }
+        });
+        setActiveSection(current);
+    };
+
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        const headerHeight = document.querySelector('header').offsetHeight;
+        const sectionTop = section.offsetTop - headerHeight;
+        window.scrollTo({
+            top: sectionTop,
+            behavior: 'smooth'
+        });
+    };
+
       
     return (
         <header className={`${scrolled ? 'scrolled' : ''}`}>
             <Link to="/" className='page-title'>
-                {/* <h1>Lou-Anne</h1> */}
                 <img src={Logo} alt="Logo Lab" className='header-logo' />
             </Link>
-            <nav className='nav-links'>
-                <NavLink to="/">Accueil</NavLink>
-                <NavLink to="/a-propos">A propos</NavLink>
-                <NavLink to="/mes-projets">Mes projets</NavLink>
+            <nav>
+                <ul>
+                    <li className={activeSection === 'accueil' ? 'active' : ''} onClick={() => scrollToSection('accueil')}>Accueil</li>
+                    <li className={activeSection === 'a-propos' ? 'active' : ''} onClick={() => scrollToSection('a-propos')}>A propos</li>
+                    <li>Mes projets</li>
+                </ul>
             </nav>
         </header>
     );
