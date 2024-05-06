@@ -1,0 +1,52 @@
+@import '../../variables.scss';
+
+.accueil-section {
+    display: flex;
+    min-height: 85vh; 
+    .left-side-page {
+        background-color: $purple-color;
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon-coding {
+            width: 100px;
+        }
+    }
+    .right-side-page {
+        background-color: $cream-color;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 10px;
+        overflow: hidden; /* Cache le texte en dehors de la zone de visualisation */
+        p {
+            padding-left: 60px;
+        }
+        .my-name {
+            font-weight: 900;
+            font-size: 70px;
+        }
+        .dev-web {
+            font-weight: 300;
+            font-size: 40px;
+            letter-spacing: 10px;
+            display: inline-block; /* Affiche le texte en ligne */
+            white-space: nowrap; /* Empêche le texte de passer à la ligne */
+            overflow: hidden; /* Cache le texte en dehors de la zone de visualisation */
+            border-right: 0.08em solid $purple-color; /* Ajoute une bordure qui simule le curseur de frappe */
+            animation: typing 3s steps(50, end), blink-caret 0.75s step-end infinite; /* Utilise les animations définies ci-dessous */
+            @keyframes typing {
+                from { width: 0; } 
+                to { width: 22ch; } 
+              }
+              
+              @keyframes blink-caret {
+                from, to { border-color: transparent; } /* Commence et termine avec une bordure transparente */
+                50% { border-color: $purple-color; } /* À la moitié de l'animation, affiche la bordure */
+              }
+        }
+    }
+}

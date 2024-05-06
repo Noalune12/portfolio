@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-@import '../../variables.scss';
 
 header {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    @include margin-60;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 254, 240, 0.9); /* Fond blanc avec opacité */
+        padding: 10px 50px ; /* Espacement intérieur */
+        z-index: 1000; /* Assurez-vous que l'en-tête est au-dessus du contenu */
+        transition: background-color 0.3s ease; /* Transition douce pour le changement de couleur de fond */
+    
+        &.scrolled {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'effet de profondeur */
+        }
 
     .page-title {
         text-decoration: none;
@@ -17,12 +23,12 @@ header {
             color: black;
         }
         .header-logo {
-            width: 210px;
+            width: 130px;
         }
     }
     
     .nav-links a {
-        font-size: 18px;
+        font-size: 22px;
         color: black;
         text-decoration: none;
         margin-left: 40px;
