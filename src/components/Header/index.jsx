@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './style.scss';
 import Logo from '../../assets/lab-logo.png';
 import React, { useEffect, useState } from 'react';
@@ -7,6 +7,8 @@ import React, { useEffect, useState } from 'react';
 
 function Header () {
     const [scrolled, setScrolled] = useState(false);
+    const location = useLocation();
+
 
     useEffect(() => {
         // Ajoutez un écouteur d'événement pour détecter le défilement de la page
@@ -28,37 +30,7 @@ function Header () {
         }
     };
 
-
-    // const [activeLink, setActiveLink] = useState('');
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //     const sections = document.querySelectorAll('section');
-    //     let current = '';
-    //     sections.forEach(section => {
-    //         const sectionTop = section.offsetTop;
-    //         const sectionHeight = section.clientHeight;
-    //         if (window.scrollY >= sectionTop - sectionHeight / 3) {
-    //         current = section.id;
-    //         }
-    //     });
-    //     setActiveLink(current);
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => {
-    //     window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
-
-    // const scrollToSection = (id) => {
-    //     const section = document.getElementById(id);
-    //     window.scrollTo({
-    //     top: section.offsetTop,
-    //     behavior: 'smooth'
-    //     });
-    // };
-    const [activeSection, setActiveSection] = useState('');
+    const [activeSection, setActiveSection] = useState('accueil');
 
     const updateActiveSection = () => {
         const sections = document.querySelectorAll('section');
@@ -83,19 +55,24 @@ function Header () {
         });
     };
 
+    const isProjetPage = location.pathname.startsWith("/projets/");
       
     return (
         <header className={`${scrolled ? 'scrolled' : ''}`}>
             <Link to="/" className='page-title'>
                 <img src={Logo} alt="Logo Lab" className='header-logo' />
             </Link>
-            <nav>
-                <ul>
-                    <li className={activeSection === 'accueil' ? 'active' : ''} onClick={() => scrollToSection('accueil')}>Accueil</li>
-                    <li className={activeSection === 'a-propos' ? 'active' : ''} onClick={() => scrollToSection('a-propos')}>A propos</li>
-                    <li>Mes projets</li>
-                </ul>
-            </nav>
+            {isProjetPage ? (
+                <button onClick={() => window.history.back()}>Retour</button>
+            ) : (
+                <nav>
+                    <ul>
+                        <li className={activeSection === 'accueil' ? 'active' : ''} onClick={() => scrollToSection('accueil')}>Accueil</li>
+                        <li className={activeSection === 'a-propos' ? 'active' : ''} onClick={() => scrollToSection('a-propos')}>A propos</li>
+                        <li className={activeSection === 'mes-projets' ? 'active' : ''} onClick={() => scrollToSection('mes-projets')}>Mes projets</li>
+                    </ul>
+                </nav>
+            )}
         </header>
     );
 }

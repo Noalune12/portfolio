@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.mes-projets {
+    padding: 50px;
+    text-align: center;
+    .mes-projets-title {
+        padding-bottom: 20px;
+    }
+    .projets-cards-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
