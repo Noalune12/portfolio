@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './style.scss';
 import Logo from '../../assets/lab-logo.png';
 import React, { useEffect, useState } from 'react';
+import Icon from '../../assets/bouton-retour.png';
 
 
 
@@ -63,7 +64,10 @@ function Header () {
                 <img src={Logo} alt="Logo Lab" className='header-logo' />
             </Link>
             {isProjetPage ? (
-                <button onClick={() => window.history.back()}>Retour</button>
+                <div className='back' onClick={() => window.history.back()}>
+                <img src={Icon} alt='icone-retour'/>
+                <p>Retour</p>
+                </div>
             ) : (
                 <nav>
                     <ul>

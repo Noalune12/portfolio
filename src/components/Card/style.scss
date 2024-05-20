@@ -1,34 +1,47 @@
 @import '../../variables.scss';
 
 .projects-card {
-    width: 400px;
-    background-color: rgb(238, 238, 238);
-    padding: 10px;
-    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 13px 27px -5px rgba($purple-color, 0.25), 
+    0 8px 16px -8px rgba(0, 0, 0, 0.3),       
+    0 -6px 16px -6px rgba(0, 0, 0, 0.03);      
+    transition: all ease 200ms;
 
     a {
         text-decoration: none;
     }
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
         cursor: pointer;
     }
 
     .card-img {
         width: 100%;
         object-fit: cover;
-        border-radius: 15px;
+        border-radius: 10px 10px 0px 0px;
         z-index: 1;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre avec 0 décalage horizontal, 4px décalage vertical et 8px de flou, couleur noire avec 10% d'opacité */
     }
 
     .card-title {
         color: black;
+        padding: 10px 20px;
+        line-height: 1.4;
+        font-size: 20px;
+        font-weight: 500;
+        transition: all ease-in 100ms;
     }
 
     .card-tags {
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
+        padding: 10px 20px;
+        justify-content: center;
         p {
             color: black;
             background-color: rgba($purple-color, 0.5);
