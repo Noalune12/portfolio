@@ -24,8 +24,37 @@ function Projet () {
     // if(!thisProjet) {
     //     return <Error404 />
     // }
+
+    const handleGithubLinkClick = () => {
+        if (thisProjet && thisProjet.github) {
+            window.open(thisProjet.github, '_blank'); 
+        }
+      };
+
+      const handleSiteLinkClick = () => {
+        if (thisProjet && thisProjet.link) {
+            window.open(thisProjet.link, '_blank'); 
+        }
+      };
+
+      
     return (
-        <h1>{thisProjet.title}</h1>
+        <div className='project'>
+            <h1>{thisProjet.title}</h1>
+            <h2>{thisProjet.subtitle}</h2>
+            <img src={thisProjet.cover} alt='project-img' />
+            <ul>
+                {thisProjet.tags.map((tag, index) =>
+                <li key={`${tag}-${index}`}>{tag}</li>)}
+            </ul>
+            <button onClick={handleGithubLinkClick}>Consulter le code</button>
+            {thisProjet.link && (<button onClick={handleSiteLinkClick}>Voir le site</button>)}
+            <p>{thisProjet.description}</p>
+            <ul>
+                {thisProjet.skills.map((skill, index) =>
+                <li key={`${skill}-${index}`}>{skill}</li>)}
+            </ul>
+        </div>
     )
 
 }
