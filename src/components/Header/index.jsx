@@ -14,12 +14,12 @@ function Header () {
     useEffect(() => {
         // Ajoutez un écouteur d'événement pour détecter le défilement de la page
         window.addEventListener('scroll', handleScroll);
-        
+
         // Supprimez l'écouteur d'événement lorsque le composant est démonté
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    });
 
     // Fonction pour gérer le défilement de la page
     const handleScroll = () => {
@@ -27,6 +27,7 @@ function Header () {
             setScrolled(true);
             updateActiveSection();
         } else {
+            setActiveSection('accueil');
             setScrolled(false);
         }
     };

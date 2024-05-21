@@ -1,4 +1,5 @@
 import './style.scss';
+import Timeline from '../../components/Timeline';
 
 function Apropos () {
     return (
@@ -46,7 +47,22 @@ function Apropos () {
                         </div>
                     </div>
            </div>
-           {/* A ajouter : outils, savoit-être, parcours?? */}
+           <div className='a-propos-parcours'>
+                <h2 className='parcours-title'>Mon parcours</h2>
+                <Timeline/>
+                {/* <ul>
+                    <li> 
+                        <div className='date'>2016 - 2019</div>
+                        <div className='title'>Master</div>
+                        <div className='descr'>aaaaaa</div>
+                    </li>
+                    <li>
+                        <div className='date'>2024</div>
+                        <div className='title'>Openclassrooms</div>
+                        <div className='descr'>aaaaaa</div>
+                    </li>
+                </ul> */}
+            </div>
         </section>
     )
 

@@ -44,6 +44,15 @@
         "id" : "Nina-Carducci",
         "title" : "Nina Carducci",
         "cover": "https://i.ibb.co/tb7FYCc/booki1.webp",
+        "subtitle": "Débugger, améliorer le SEO et optimiser un site de photographe à l'aide de Lighthouse et Chrome DevTools.",
+        "description": "Sur un site déjà existant, j'ai dû améliorer la performance du site en obtenant un score Lighthouse supérieur à 90, en optimisant les images pour réduire le temps de chargement du site. J'ai également optimisé le référencement (SEO, référencement local avec Schemo.org et réseaux sociaux avec les balises méta). Enfin, j'ai pu améliorer l'accessibilité en optimisant nottament lecode et sa structure. Le site contenait aussi certains bugs à corriger.",
+        "skills" : [
+            "Optimiser les performances d’un site web",
+            "Débugger un site web grâce aux Chrome DevTools",
+            "Rédiger un cahier de recette pour tester un site",
+            "Intégrer du contenu conformément à la maquette avec HTML et CSSDévelopper lefront-end à partir d'un back-end déjà existant",
+            "Communiquer avec une API REST"
+        ],
         "tags" : [
             "SEO",
             "Performance",
