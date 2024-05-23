@@ -33,6 +33,13 @@
             font-weight: 400;
             position: relative;
             background-color: rgba($cream-color, 0.4);
+            .link-a-propos {
+                color: black;
+                font-weight: 900;
+                &:hover {
+                    text-shadow: rgba(black, 0.5) 1px 0 10px;
+                }
+            }
         }
         
     }

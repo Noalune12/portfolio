@@ -3,7 +3,7 @@ import { useFetch } from '../../utils/usefetch';
 import { useEffect } from 'react';
 import Loading from '../../components/Loading';
 import Error from '../../components/Error';
-// import Error404 from '../Error404';
+import Error404 from '../Error404';
 import { useParams } from 'react-router-dom';
 
 function Projet () {
@@ -26,9 +26,9 @@ function Projet () {
     if (projets.error) {
         return <Error />;
     }
-    // if(!thisProjet) {
-    //     return <Error404 />
-    // }
+    if(!thisProjet) {
+        return <Error404 />
+    }
 
     const handleGithubLinkClick = () => {
         if (thisProjet && thisProjet.github) {
@@ -46,11 +46,12 @@ function Projet () {
     return (
         <div className='project'>
             <h1>{thisProjet.title}</h1>
-            <h2>{thisProjet.subtitle}</h2>
+            <div className='project-info'>
             <div className='project-img'>
                 <img src={thisProjet.cover} alt='project-img' />
             </div>
             <div className='project-tag-link'>
+                 <h2>{thisProjet.subtitle}</h2>
                 <div className='project-tag'>
                         {thisProjet.tags.map((tag, index) =>
                         <p key={`${tag}-${index}`}>{tag}</p>)}
@@ -59,6 +60,7 @@ function Projet () {
                     <button onClick={handleGithubLinkClick}>Consulter le code</button>
                     {thisProjet.link && (<button onClick={handleSiteLinkClick}>Voir le site</button>)}
                 </div>
+            </div>
             </div>
             <div className='project-descr-skills'>
                 <div className='project-descr'>

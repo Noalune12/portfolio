@@ -8,6 +8,7 @@ import Icon from '../../assets/bouton-retour.png';
 
 function Header () {
     const [scrolled, setScrolled] = useState(false);
+    const [activeSection, setActiveSection] = useState('accueil');
     const location = useLocation();
 
 
@@ -32,7 +33,6 @@ function Header () {
         }
     };
 
-    const [activeSection, setActiveSection] = useState('accueil');
 
     const updateActiveSection = () => {
         const sections = document.querySelectorAll('section');
@@ -57,14 +57,14 @@ function Header () {
         });
     };
 
-    const isProjetPage = location.pathname.startsWith("/projets/");
+    const isHomePage = location.pathname === '/';
       
     return (
         <header className={`${scrolled ? 'scrolled' : ''}`}>
-            <Link to="/" className='page-title'>
+            <Link to="/" className='page-title' onClick={() => window.scrollTo(0, 0)}>
                 <img src={Logo} alt="Logo Lab" className='header-logo' />
             </Link>
-            {isProjetPage ? (
+            {!isHomePage ? (
                 <div className='back' onClick={() => window.history.back()}>
                 <img src={Icon} alt='icone-retour'/>
                 <p>Retour</p>

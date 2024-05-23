@@ -4,20 +4,26 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './style.scss';
 import Header from './components/Header';
 import Home from './pages/Home'
-// import Error404 from './pages/Error404';
+import Error404 from './pages/Error404';
 import Projet from './pages/Projet';
+import Footer from './components/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
      <Router >
-        <Header />
-        <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path="/projets/:projetId" element={<Projet />} />
-          {/* <Route path="*" element={<Error404 />} /> */}
-        </Routes>
+      <div className='app-wrapper'>
+          <Header />
+          <div className='content'>
+            <Routes>
+              <Route path='/' element={<Home />}/>
+              <Route path="/projets/:projetId" element={<Projet />} />
+              <Route path="*" element={<Error404 />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
     </Router>
   </React.StrictMode>
 );
