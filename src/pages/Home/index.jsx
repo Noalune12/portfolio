@@ -2,6 +2,7 @@ import React from 'react';
 import Accueil from '../../sections/Accueil';
 import Apropos from '../../sections/A-propos';
 import MesProjets from '../../sections/Projets';
+import Contact from '../../sections/Contact';
 
 
 function Home () {
@@ -10,6 +11,7 @@ function Home () {
         <Accueil />
         <Apropos />
         <MesProjets />
+        <Contact />
     </div>
         );
 }

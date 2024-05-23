@@ -75,6 +75,7 @@ function Header () {
                         <li className={activeSection === 'accueil' ? 'active' : ''} onClick={() => scrollToSection('accueil')}>Accueil</li>
                         <li className={activeSection === 'a-propos' ? 'active' : ''} onClick={() => scrollToSection('a-propos')}>A propos</li>
                         <li className={activeSection === 'mes-projets' ? 'active' : ''} onClick={() => scrollToSection('mes-projets')}>Mes projets</li>
+                        <li className={activeSection === 'contact' ? 'active' : ''} onClick={() => scrollToSection('contact')}>Contact</li>
                     </ul>
                 </nav>
             )}
