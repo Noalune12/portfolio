@@ -27,7 +27,7 @@
     {
         "id": "Sophie-Bluel",
         "title" : "Sophie Bluel, portfolio d'une architecte",
-        "cover": "https://i.ibb.co/tb7FYCc/booki1.webp",
+        "cover": "https://i.ibb.co/NZMrGWS/sophie-bluel1.png",
         "subtitle" : "Créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API.",
         "description" : [
             { "text": "En m'appuyant sur le code back-end déjà réalisé et en reprenant une première version statique du code front-end, j'ai dû travailler sur la conception du site de Sophie Bluel, architecte d'intérieur. Voici les ajouts réalisés : ", "bold": false },
@@ -52,7 +52,7 @@
     {
         "id" : "Nina-Carducci",
         "title" : "Nina Carducci",
-        "cover": "https://i.ibb.co/tb7FYCc/booki1.webp",
+        "cover": "https://i.ibb.co/WgPFxJ6/nina-carducci1.png",
         "subtitle": "Débugger, améliorer le SEO et optimiser un site de photographe à l'aide de Lighthouse et Chrome DevTools.",
         "description": [
             { "text": "Sur un site déjà existant, j'ai pu ", "bold": false },
@@ -85,7 +85,7 @@
     {
         "id": "Kasa",
         "title" : "Kasa, site de location immobilière",
-        "cover": "https://i.ibb.co/tb7FYCc/booki1.webp",
+        "cover": "https://i.ibb.co/HH2smS2/kasa1.png",
         "subtitle":"Créer une application web de location immobilière avec React",
         "description" : [
             { "text": "A partir de maquettes conçues sur Figma, j'ai pu développer l'ensemble d'une ", "bold": false },
@@ -114,7 +114,7 @@
     {
         "id": "Mon-Vieux-Grimoire",
         "title" : "Mon vieux grimoire",
-        "cover": "https://i.ibb.co/tb7FYCc/booki1.webp",
+        "cover": "https://i.ibb.co/9gyCJDt/mon-vieux-grimoire1.png",
         "subtitle": "Développer le back-end d'un site de notation de livres",
         "description" : [
             { "text": "Afin de développer le back-end d'un site de notation de livre, j'ai pu créer ", "bold": false },

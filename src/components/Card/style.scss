@@ -21,7 +21,8 @@
 
     .card-img {
         width: 100%;
-        object-fit: cover;
+        height: 55%;
+        object-fit: contain;
         border-radius: 10px 10px 0px 0px;
         z-index: 1;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre avec 0 décalage horizontal, 4px décalage vertical et 8px de flou, couleur noire avec 10% d'opacité */
