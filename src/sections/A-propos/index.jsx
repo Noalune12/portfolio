@@ -1,5 +1,12 @@
 import './style.scss';
 import Timeline from '../../components/Timeline';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaSass, FaNodeJs, FaGit, FaGithub } from 'react-icons/fa';
+import LogoExpress from '../../assets/express.svg';
+import LogoLighthouse from '../../assets/google-lighthouse.svg';
+import { SiMongodb, SiVisualstudiocode } from "react-icons/si";
+
+
+
 
 const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -23,8 +30,11 @@ function Apropos () {
                     <br/><br/>Si vous souhaitez en savoir plus sur moi, vous pouvez consulter mon&nbsp;
                     <a href='https://github.com/Noalune12/' className='link-a-propos' target='blank'>
                         GitHub
-                    </a>, 
-                    mon CV, et découvrir&nbsp;
+                    </a>,  &nbsp;
+                    <a href="/Lou-Anne-Buisson-CV.pdf" className='link-a-propos' target="_blank" rel="noopener noreferrer">
+                        mon CV
+                    </a>
+                    , et découvrir&nbsp;
                     <a 
                             href='#mes-projets' 
                             className='link-a-propos'
@@ -40,55 +50,79 @@ function Apropos () {
            </div>
            <div className='a-propos-competences'>
                 <h2 className='competences-titres'>Mes compétences</h2>
-                    <div className='competences-texte'>
-                        
-                        <div className='competences-liste'>
-                            <h3>Front-end</h3>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>React</li>
-                                    <li>Sass</li>
-                                </ul>
+                    <div className='competences-content'>
+                        <div className='competences-text'>
+                            <h3>Front-End</h3>
+                            <div className='competences-list'>
+                                <div className='competence-component'>
+                                    <FaHtml5/>
+                                    <p>HTML</p>
+                                </div>
+                                <div className='competence-component'>
+                                    <FaCss3/>
+                                    <p>CSS</p>
+                                </div>
+                                <div className='competence-component'>
+                                    <FaJs/>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div className='competence-component'>
+                                    <FaReact/>
+                                    <p>React</p>
+                                </div>
+                                <div className='competence-component'>
+                                    <FaSass/>
+                                    <p>SASS</p>
+                                </div>
+                            </div>
                         </div>
-
-                        <div className='competences-liste'>
-                            <h3>Back-end</h3>
-                                <ul>
-                                    <li>Express.js</li>
-                                    <li>Node.js</li>
-                                    <li>MongoDB</li>
-                                    <li>Mongoose</li>
-                                </ul>
+                        <div className='competences-text'>
+                            <h3>Back-End</h3>
+                            <div className='competences-list'>
+                                <div className='competence-component'>
+                                    <FaNodeJs/>
+                                    <p>Node.js</p>
+                                </div>
+                                <div className='competence-component'>
+                                    <img src={LogoExpress} alt='express-logo' className='express-logo'/>
+                                    <p>Express.js</p>
+                                </div>
+                                <div className='competence-component'>
+                                    <SiMongodb/>
+                                    <p>MongoDB</p>
+                                </div>
+                                <div className='competence-component'>
+                                    <SiMongodb/>
+                                    <p>Mongoose</p>
+                                </div>
+                            </div>
                         </div>
-
-                        <div className='competences-liste'>
+                        <div className='competences-text'>
                             <h3>Outils</h3>
-                                <ul>
-                                    <li>Visual Studio Code</li>
-                                    <li>Git</li>
-                                    <li>GitHub</li>
-                                    <li>Google Lighthouse</li>
-                                </ul>
+                            <div className='competences-list'>
+                                <div className='competence-component'>
+                                    <SiVisualstudiocode/>
+                                    <p>Visual Studio Code</p>
+                                </div>
+                                <div className='competence-component'>
+                                    <FaGit/>
+                                    <p>Git</p>
+                                </div>
+                                <div className='competence-component'>
+                                    <FaGithub/>
+                                    <p>Github</p>
+                                </div>
+                                <div className='competence-component'>
+                                    <img src={LogoLighthouse} alt='lighthouse-logo' className='lighthouse-logo'/>
+                                    <p>Google Lighthouse</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
            </div>
            <div className='a-propos-parcours'>
                 <h2 className='parcours-title'>Mon parcours</h2>
                 <Timeline/>
-                {/* <ul>
-                    <li> 
-                        <div className='date'>2016 - 2019</div>
-                        <div className='title'>Master</div>
-                        <div className='descr'>aaaaaa</div>
-                    </li>
-                    <li>
-                        <div className='date'>2024</div>
-                        <div className='title'>Openclassrooms</div>
-                        <div className='descr'>aaaaaa</div>
-                    </li>
-                </ul> */}
             </div>
         </section>
     )

@@ -6,11 +6,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 50px;
     h2 {
-        padding-bottom: 30px;
+        padding-bottom: 5%;
         font-size: 30px;
+        padding-top: 5%;
     }
     .a-propos-section {
         text-align: center;
@@ -25,7 +24,7 @@
 
             background-repeat: no-repeat;
             background-size: 80px 80px;
-            margin-bottom: 30px;
+            margin-bottom: 5%;
         }
         
         .a-propos-texte {
@@ -44,27 +43,61 @@
         
     }
     .a-propos-competences {
-        text-align: center;
-        width: 80%;
-        .competences-texte {
+        background-color: $cream-color;
+        background: linear-gradient(180deg, rgba(134,116,149,1) 4%, rgba(245,240,232,1) 37%, rgba(230,223,221,1) 78%, rgba(134,116,149,1) 96%);
+        width: 100%;
+        padding-bottom: 10%;
+        h2 {
+            text-align: center;
+        }
+        h3 {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .competences-content {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: first baseline;
-            flex-wrap: wrap;
-            gap: 60px;
-            .competences-liste {
-                background-color: rgba($cream-color, 0.4);
-                padding: 20px 20px;
-                margin-bottom: 20px;
-                width : 20%;
-                h3 {
-                    padding-bottom: 20px;
-                    font-size: 20px;
-                }
-                li {
-                    list-style-type: none;
-                    line-height: 30px;
+            flex-direction: column;
+            gap: 40px;
+            .competences-text {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .competences-list {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5%;
+                    .competence-component {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: rgba($purple-color, 0.4);
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                        width: 100px;
+                        height: 80px;
+                        border-radius: 8px;
+                        transition: box-shadow 300ms ease, transform 300ms ease;
+                        &:hover {
+                            box-shadow: 5px 10px 16px rgba(0, 0, 0, 0.3); 
+                            transform: scale(1.05);
+                        }
+                        svg {
+                        font-size: 30px;
+                        }
+                        .lighthouse-logo {
+                            height: 30px;
+                        }
+                        .express-logo {
+                            height: 35px;
+                        }
+                        p {
+                            margin-top: 5px; 
+                            font-size: 14px; 
+                            text-align: center; 
+                        }
+                    }
                 }
             }
         }
@@ -73,126 +106,7 @@
         text-align: center;
         min-height: 100vh;
         width: 100%;
-        // display: grid;
-        align-content: center;
-        // gap: 2rem;
-        // padding: 2rem;
-        // ul {
-        //     --col-gap: 2rem;
-        //     --row-gap: 2rem;
-        //     --line-w: 0.25rem;
-        //     display: grid;
-        //     grid-template-columns: var(--line-w) 1fr;
-        //     grid-auto-columns: max-content;
-        //     column-gap: var(--col-gap);
-        //     list-style: none;
-        //     width: min(60rem, 90%);
-        //     margin-inline: auto;
-
-        //     &::before {
-        //         content: "";
-        //         grid-column: 1;
-        //         grid-row: 1 / span 20;
-        //         background: $cream-color;
-        //         border-radius: calc(var(--line-w) / 2);
-        //     }
-
-        //     li:not(:last-child) {
-        //         margin-bottom: var(--row-gap);
-        //       }
-
-        //       li {
-        //         width: 300px;
-        //         grid-column: 2;
-        //         --inlineP: 1.5rem;
-        //         margin-inline: var(--inlineP);
-        //         grid-row: span 2;
-        //         display: grid;
-        //         grid-template-rows: min-content min-content min-content;
-
-        //         .date {
-        //             --dateH: 3rem;
-        //             height: var(--dateH);
-        //             margin-inline: calc(var(--inlineP) * -1);
-                  
-        //             text-align: center;
-        //             background-color: $cream-color;
-                  
-        //             color: black;
-        //             font-size: 1.25rem;
-        //             font-weight: 700;
-                  
-        //             display: grid;
-        //             place-content: center;
-        //             position: relative;
-                  
-        //             border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
-
-        //             &::before {
-        //                 content: "";
-        //                 width: var(--inlineP);
-        //                 aspect-ratio: 1;
-        //                 background: $cream-color;
-        //                 background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
-        //                 position: absolute;
-        //                 top: 100%;
-                      
-        //                 clip-path: polygon(0 0, 100% 0, 0 100%);
-        //                 right: 0;
-        //               }
-
-        //               &::after {
-        //                 content: "";
-        //                 position: absolute;
-        //                 width: 2rem;
-        //                 aspect-ratio: 1;
-        //                 background-color: $purple-color;
-        //                 border: 0.3rem solid $cream-color;
-        //                 border-radius: 50%;
-        //                 top: 50%;
-                      
-        //                 transform: translate(50%, -50%);
-        //                 right: calc(100% + var(--col-gap) + var(--line-w) / 2);
-        //               }
-        //           }
-        //           .title, .descr {
-        //             background: $purple-color;
-        //             position: relative;
-        //             padding-inline: 1.5rem;
-        //             &::before {
-        //                 content: "";
-        //                 position: absolute;
-        //                 width: 90%;
-        //                 height: 0.5rem;
-        //                 background: rgba(0, 0, 0, 0.5);
-        //                 left: 50%;
-        //                 border-radius: 50%;
-        //                 filter: blur(4px);
-        //                 transform: translate(-50%, 50%);
-        //             }
-        //           }
-        //           .title {
-        //             overflow: hidden;
-        //             padding-block-start: 1.5rem;
-        //             padding-block-end: 1rem;
-        //             font-weight: 500;
-        //             &::before {
-        //                 bottom: calc(100% + 0.125rem);
-        //               }
-        //           }
-        //           .descr {
-        //             padding-block-end: 1.5rem;
-        //             font-weight: 300;
-        //             &::before {
-        //                 z-index: -1;
-        //                 bottom: 0.25rem;
-        //               }
-        //           }
-
-                  
-        //       }
-        //   }
-          
+        align-content: center;          
     }
 }
 

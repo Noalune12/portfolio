@@ -41,13 +41,13 @@
         }
 
         textarea {
-        height: 150px; 
+        height: 130px; 
         resize: none;
         }
 
         .submit-button {
         display: block;
-        margin: 2rem auto 0 auto; 
+        margin: 1rem auto 0 auto; 
         padding: 5px 15px;
         background-color: $purple-color;
         font-size: 20px;
@@ -63,6 +63,7 @@
         }
     }
     .form-message {
+        text-align: center;
         font-weight: 700;
         font-size: 18px;
         text-shadow: black 1px 0 10px;

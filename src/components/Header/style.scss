@@ -7,24 +7,24 @@ header {
         align-items: center;
         position: sticky;
         top: 0;
-        background-color: rgba($cream-color, 0.9); /* Fond blanc avec opacité */
-        padding: 10px 50px ; /* Espacement intérieur */
-        z-index: 1000; /* Assurez-vous que l'en-tête est au-dessus du contenu */
-        transition: background-color 0.3s ease; /* Transition douce pour le changement de couleur de fond */
+        background-color: rgba($cream-color, 0.9);
+        padding: 10px 50px ;
+        z-index: 1000; 
+        transition: background-color 0.3s ease; 
     
         &.scrolled {
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'effet de profondeur */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
         }
 
     .page-title {
         text-decoration: none;
         .header-logo {
-            width: 130px;
+            width: 100px;
         }
     }
 
     nav {
-        font-size: 22px;
+        font-size: 20px;
         text-decoration: none;
         margin-left: 40px;
         flex-wrap: wrap;

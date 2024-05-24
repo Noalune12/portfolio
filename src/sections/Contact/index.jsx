@@ -17,6 +17,11 @@ function Contact () {
       return;
     }
 
+    if (!validateEmail(email)) {
+        setStatus('Veuillez entrer une adresse e-mail valide.');
+        return;
+      }
+
     const templateParams = {
       from_name: name,
       from_email: email,
@@ -35,11 +40,16 @@ function Contact () {
       });
   };
 
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  };
+
     return (
         <section className='contact' id='contact'>
               <h2 className="contact-title">Me contacter</h2>
               <p className='contact-text'> N'hésitez pas à me contacter pour toute question ou demande de collaboration.</p>
-              <form onSubmit={handleSubmit} className="form-container">
+              <form onSubmit={handleSubmit} className="form-container" noValidate>
                     <div className='form-content'>
                         <div className='form-row'>
                             <div className='form-info'>
@@ -67,9 +77,10 @@ function Contact () {
                             ></textarea>
                         </div>
                     </div>
+                    <p className='form-message'>{status}</p>
                     <button type="submit" className="submit-button">Envoyer</button>
                 </form>
-            <p className='form-message'>{status}</p>
+            {/* <p className='form-message'>{status}</p> */}
         </section>
     )
 
