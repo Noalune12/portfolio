@@ -65,7 +65,12 @@ function Projet () {
             <div className='project-descr-skills'>
                 <div className='project-descr'>
                     <h3>Déscription</h3>
-                    <p>{thisProjet.description}</p>
+                    {thisProjet.description.map((part, index) => (
+                    <span key={index} style={{ fontWeight: part.bold ? 'bold' : 'normal' }}>
+                    {part.text}
+                    </span>
+                    ))}
+                    {/* <p>{thisProjet.description}</p> */}
                 </div>
                 <div className='project-skills'>
                     <h3>Compétences</h3>

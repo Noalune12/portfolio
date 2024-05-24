@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './style.scss';
 import Logo from '../../assets/lab-logo.png';
 import React, { useEffect, useState } from 'react';
@@ -10,6 +10,8 @@ function Header () {
     const [scrolled, setScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState('accueil');
     const location = useLocation();
+    const navigate = useNavigate();
+
 
 
     useEffect(() => {
@@ -58,6 +60,14 @@ function Header () {
     };
 
     const isHomePage = location.pathname === '/';
+
+    const handleBackClick = () => {
+        if (location.pathname.startsWith('/projets/')) {
+            window.history.back();
+        } else {
+            navigate('/');
+        } 
+    };
       
     return (
         <header className={`${scrolled ? 'scrolled' : ''}`}>
@@ -65,7 +75,7 @@ function Header () {
                 <img src={Logo} alt="Logo Lab" className='header-logo' />
             </Link>
             {!isHomePage ? (
-                <div className='back' onClick={() => window.history.back()}>
+                <div className='back' onClick={handleBackClick}>
                 <img src={Icon} alt='icone-retour'/>
                 <p>Retour</p>
                 </div>

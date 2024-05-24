@@ -4,11 +4,10 @@
 header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         position: sticky;
         top: 0;
         background-color: rgba($cream-color, 0.9);
-        padding: 10px 50px ;
+        padding: 5px 50px ;
         z-index: 1000; 
         transition: background-color 0.3s ease; 
     

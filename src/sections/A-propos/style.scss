@@ -44,7 +44,7 @@
     }
     .a-propos-competences {
         background-color: $cream-color;
-        background: linear-gradient(180deg, rgba(134,116,149,1) 4%, rgba(245,240,232,1) 37%, rgba(230,223,221,1) 78%, rgba(134,116,149,1) 96%);
+        background: linear-gradient(180deg, rgba($purple-color, 1) 4%, rgba($cream-color, 1) 37%, rgba($cream-color, 1) 78%, rgba($purple-color, 1) 96%);
         width: 100%;
         padding-bottom: 10%;
         h2 {

@@ -22,7 +22,7 @@ export default function Timeline () {
   >
     <h3 className="vertical-timeline-element-title">Formation Développeur Web</h3>
     <h4 className="vertical-timeline-element-subtitle">Openclassrooms, France</h4>
-    <ul>
+    <ul className="timeline-list">
         <li>Construction de site web responsive et dynamique (HTML, CSS, JS, React)</li>
         <li>Création d'Api et bases de données (NodeJS, Express, MongoDB)</li>
         <li>Optimisation de performances et SEO</li>
@@ -39,7 +39,7 @@ export default function Timeline () {
   >
     <h3 className="vertical-timeline-element-title">Chef de projets événementiel</h3>
     <h4 className="vertical-timeline-element-subtitle">Lyon, France</h4>
-    <ul>
+    <ul className="timeline-list">
         <li>Gestion et coordination des projets événementiels en lien avec les clients</li>
         <li>Création et développement de jeux et formations digitales (Articulate Sotryline)</li>
         <li>Gestion de site internet d'une agence d'événementiel (Wordpress)</li>
@@ -55,7 +55,7 @@ export default function Timeline () {
   >
     <h3 className="vertical-timeline-element-title">Master Management et Commerce International</h3>
     <h4 className="vertical-timeline-element-subtitle">IAE Lyon 3, France et Université de Nagoya, Japon</h4>
-    <ul>
+    <ul className="timeline-list">
         <li>Gestion de projets</li>
         <li>Développement commercial international</li>
         <li>Entrepreunariat</li>

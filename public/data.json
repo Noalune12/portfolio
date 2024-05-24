@@ -4,7 +4,12 @@
         "title" : "Booki, site d'agence immobilière",
         "cover": "https://i.ibb.co/tb7FYCc/booki1.webp",
         "subtitle" : "Créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS",
-        "description" : "Après l'étude des maquettes Figma mises à disposition (Desktop, Tablet, Mobile), j'ai dû créer lapage d'accueil du site Booki tout en intégrant une interface responsive. Le site doit pouvoir fonctionner sur tous les appareils et s'adapter à toutes tailles d'écran.",
+        "description" : [
+            { "text": "Après l'étude des maquettes Figma mises à disposition (Desktop, Tablet, Mobile), j'ai dû créer la page d'accueil du site Booki tout en intégrant une ", "bold": false },
+            { "text": "interface responsive", "bold": true },
+            { "text": ". Le site doit pouvoir ", "bold": false },
+            { "text": "fonctionner sur tous les appareils et s'adapter à toutes tailles d'écran.", "bold": true }
+          ],
         "skills" : [
             "Versionnage du projet avec Git et Github",
             "Installer un environnement de développement front-end",
@@ -24,7 +29,11 @@
         "title" : "Sophie Bluel, portfolio d'une architecte",
         "cover": "https://i.ibb.co/tb7FYCc/booki1.webp",
         "subtitle" : "Créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API.",
-        "description" : "En m'appuyant sur le code back-end déjà réalisé et en reprenant une première version statique du code front-end, j'ai dû travailler sur la conception du site de Sophie Bluel, architecte d'intérieur. Voici les ajouts réalisés : récupération dynamique des images de la galerie, ajout des filtres par catégories, création d'une page de connexion pour l'administrateur, création d'une modale accessible uniquement après connexion permettant à l'administrateur d'ajouter et supprimer des projets.",
+        "description" : [
+            { "text": "En m'appuyant sur le code back-end déjà réalisé et en reprenant une première version statique du code front-end, j'ai dû travailler sur la conception du site de Sophie Bluel, architecte d'intérieur. Voici les ajouts réalisés : ", "bold": false },
+            { "text": "récupération dynamique des images de la galerie, ajout des filtres par catégories, création d'une page de connexion pour l'administrateur, création d'une modale", "bold": true },
+            { "text": " accessible uniquement après connexion permettant à l'administrateur d'ajouter et supprimer des projets.", "bold": false }
+          ],
         "skills" : [
             "Gérer les événements utilisateurs avec JavaScript",
             "Manipuler les éléments du DOM avec JavaScript",
@@ -45,7 +54,17 @@
         "title" : "Nina Carducci",
         "cover": "https://i.ibb.co/tb7FYCc/booki1.webp",
         "subtitle": "Débugger, améliorer le SEO et optimiser un site de photographe à l'aide de Lighthouse et Chrome DevTools.",
-        "description": "Sur un site déjà existant, j'ai dû améliorer la performance du site en obtenant un score Lighthouse supérieur à 90, en optimisant les images pour réduire le temps de chargement du site. J'ai également optimisé le référencement (SEO, référencement local avec Schemo.org et réseaux sociaux avec les balises méta). Enfin, j'ai pu améliorer l'accessibilité en optimisant nottament lecode et sa structure. Le site contenait aussi certains bugs à corriger.",
+        "description": [
+            { "text": "Sur un site déjà existant, j'ai pu ", "bold": false },
+            { "text": "améliorer la performance ", "bold": true },
+            { "text": "du site en obtenant un score Lighthouse supérieur à 90, ", "bold": false },
+            { "text": "en optimisant les images ", "bold": true },
+            { "text": "pour réduire le temps de chargement du site. J'ai également ", "bold": false },
+            { "text": "optimisé le référencement ", "bold": true },
+            { "text": "(SEO, référencement local avec Schemo.org et réseaux sociaux avec les balises méta). Enfin, j'ai pu ", "bold": false },
+            { "text": "améliorer l'accessibilité ", "bold": true },
+            { "text": "en optimisant nottament le code et sa structure. Le site contenait aussi certains bugs à corriger.", "bold": false }
+          ],
         "skills" : [
             "Optimiser les performances d’un site web",
             "Débugger un site web grâce aux Chrome DevTools",
@@ -68,7 +87,15 @@
         "title" : "Kasa, site de location immobilière",
         "cover": "https://i.ibb.co/tb7FYCc/booki1.webp",
         "subtitle":"Créer une application web de location immobilière avec React",
-        "description" : "A partir de maquettes conçues sur Figma, j'ai pu développer l'ensemble d'une application avec React en y intégrant des composants responsives et des routes React Router. L'application a été initialisé avec Create React App et les informations des logements ont été ajouté à partir d'un fichier JSON. Pour la mise en page, j'ai pu utiliser le préprocesseur SASS qui permet de gérer le CSS et iplémenter des animations afin de créer une application web interactives et visuellement attrayante.",
+        "description" : [
+            { "text": "A partir de maquettes conçues sur Figma, j'ai pu développer l'ensemble d'une ", "bold": false },
+            { "text": "application avec React en y intégrant des composants responsives et des routes React Router. ", "bold": true },
+            { "text": "L'application a été initialisé avec ", "bold": false },
+            { "text": "Create React App ", "bold": true },
+            { "text": "et les informations des logements ont été ajouté à partir d'un fichier JSON. Pour la mise en page, j'ai pu utiliser le préprocesseur ", "bold": false },
+            { "text": "SASS ", "bold": true },
+            { "text": "qui permet de gérer le CSS et implémenter des animations afin de créer une application web interactives et visuellement attrayante.", "bold": false }
+          ],
         "skills" : [
             "Configurer la navigation entre les pages de l'application avec React Router",
             "Initialiser une application avec Create React App",
@@ -89,7 +116,21 @@
         "title" : "Mon vieux grimoire",
         "cover": "https://i.ibb.co/tb7FYCc/booki1.webp",
         "subtitle": "Développer le back-end d'un site de notation de livres",
-        "description" : "Afin de développer le back-end d'un site de notation de livre, j'ai pu créer un serveur avec Express et le connecter à une base de données MongoDB, tout en mettant en place de la structure du serveur et la gestion de la communication entre le serveur et la base de données. J'ai ainsi développé les modèles de données et implémenté des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) pour la gestion des livres et des notations. J'ai pu également implémenter un système d'authentification sécurisé pour les utilisateurs du site. Le projet comprend également la gestion du téléchargement et de l'optimisation des images, ainsi que l'ajout de fonctionnalités pour noter les livres et calculer la note moyenne. Tout au long du projet, les bonnes pratiques du Green Code pour réduire l'empreinte écologique du site ont été respecté.",
+        "description" : [
+            { "text": "Afin de développer le back-end d'un site de notation de livre, j'ai pu créer ", "bold": false },
+            { "text": "un serveur avec Express et le connecter à une base de données MongoDB, ", "bold": true },
+            { "text": "tout en mettant en place de la structure du serveur et la gestion de la communication entre le serveur et la base de données. J'ai ainsi ", "bold": false },
+            { "text": "développé les modèles de données et implémenté des opérations CRUD ", "bold": true },
+            { "text": "(Créer, Lire, Mettre à jour, Supprimer) pour la gestion des livres et des notations. J'ai pu également implémenter ", "bold": false },
+            { "text": "un système d'authentification sécurisé  ", "bold": true },
+            { "text": "pour les utilisateurs du site. Le projet comprend également ", "bold": false},
+            { "text": "la gestion du téléchargement et de l'optimisation des images", "bold": true},
+            { "text": ", ainsi que ", "bold": false},
+            { "text": "l'ajout de fonctionnalités pour noter les livres et calculer la note moyenne. ", "bold": true},
+            { "text": "Tout au long du projet, les bonnes pratiques du ", "bold": false},
+            { "text": "Green Code ", "bold": true},
+            { "text": "pour réduire l'empreinte écologique du site ont été respecté.", "bold": false }
+          ],
         "skills" : [
             "Implémenter un modèle logique de données conformément à la réglementation",
             "Mettre en œuvre des opérations CRUD de manière sécurisée",
