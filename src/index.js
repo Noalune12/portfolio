@@ -8,6 +8,8 @@ import Error404 from './pages/Error404';
 import Projet from './pages/Projet';
 import Footer from './components/Footer';
 
+document.title = "Lou-Anne Buisson, Développeuse Web";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

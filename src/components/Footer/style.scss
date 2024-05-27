@@ -13,8 +13,14 @@ footer {
         align-items: center;
         justify-content: center;
         gap: 50%;
-        svg {
-            font-size: 40px;
+        a {
+            transition: color ease 300ms;
+            &:hover {
+                color: $cream-color;
+            }
+            svg {
+                font-size: 40px;
+            }
         }
     }
     p {
