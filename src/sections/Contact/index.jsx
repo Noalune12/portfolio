@@ -53,16 +53,16 @@ function Contact () {
                     <div className='form-content'>
                         <div className='form-row'>
                             <div className='form-info'>
-                                <label>Nom:</label>
-                                <input
+                                <label htmlFor="nom">Nom:</label>
+                                <input id='nom'
                                     type="text"
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                 />
                             </div>
                             <div className='form-info'>
-                                <label>Email:</label>
-                                <input
+                                <label htmlFor="email">Email:</label>
+                                <input id='email'
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
@@ -70,8 +70,8 @@ function Contact () {
                             </div>
                         </div>
                         <div className='form-info'>
-                            <label>Message:</label>
-                            <textarea
+                            <label htmlFor="message">Message:</label>
+                            <textarea id='message'
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                             ></textarea>
