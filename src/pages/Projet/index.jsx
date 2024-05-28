@@ -79,6 +79,15 @@ function Projet () {
                     </ul>
                 </div>
             </div>
+            {thisProjet.problem && (
+            <>
+            <div className='project-problem'>
+                <h3>Problématique rencontrée</h3>
+                <p>{thisProjet.problem}</p>
+            </div>
+            </>
+            )}
+
         </div>
     )
 

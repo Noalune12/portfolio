@@ -26,7 +26,7 @@ function Apropos () {
             <div className='a-propos-section'>
                 <h2 className='a-propos-title'>A propos</h2>
                 <div className='border'>
-                <p className='a-propos-texte'>Bienvenue sur mon site !<br/><br/>Je suis développeuse web junior, passionnée par le web et les nouvelles technologies. Spécialisée dans le front-end, j'ai également des connaissances en back-end, ce qui me donne une vision globale des projets. Mon approche met les besoins et les préférences des utilisateurs au centre de la conception et du développement.
+                <p className='a-propos-texte'>Bienvenue sur mon site !<br/><br/>Après une formation initiale en management international et une première expérience professionnelle en gestion de projets, je me suis reconvertie et dirigée vers le dévelopement web.<br/><br/>Je suis développeuse web junior, passionnée par le web et les nouvelles technologies. Spécialisée dans le front-end, j'ai également des connaissances en back-end, ce qui me donne une vision globale des projets. Mon approche met les besoins et les préférences des utilisateurs au centre de la conception et du développement.
                     <br/><br/>Si vous souhaitez en savoir plus sur moi, vous pouvez consulter mon&nbsp;
                     <a href='https://github.com/Noalune12/' className='link-a-propos' target='blank'>
                         GitHub

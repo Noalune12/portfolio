@@ -16,6 +16,7 @@
             "Implémenter une interface responsive avec HTML et CSS",
             "Intégrer du contenu conformément à la maquette avec HTML et CSS"
         ],
+        "problem" :"La problématique rencontrée consistait à rendre le site responsive sur trois types d'écrans différents tout en respectant la maquette initiale. Pour y parvenir, j'ai utilisé des media queries, des règles CSS qui permettent d'appliquer des styles spécifiques en fonction des caractéristiques de l'appareil, comme sa largeur d'écran, sa résolution ou son orientation.",
         "tags" : [
             "HTML",
             "CSS"
@@ -42,6 +43,7 @@
             "Développer lefront-end à partir d'un back-end déjà existant",
             "Communiquer avec une API REST"
         ],
+        "problem" : "L'une des problématiques rencontrées dans ce projet concerne la gestion de la communication entre JavaScript, l'API, et la modale d'upload de nouveaux médias. Assurer une interaction fluide et sans erreur entre ces composants est essentiel pour garantir une bonne expérience utilisateur et le bon fonctionnement de la page de l'administrateur. Pour résoudre cette problématique, j'ai implémenté une série de bonnes pratiques et de techniques spécifiques : gestion de spomesses et des asynchrones, validation et gestion des erreurs, modale réacive.",
         "tags" : [
             "HTML",
             "CSS", 
@@ -51,7 +53,7 @@
         "year" : "2024"
     },
     {
-        "id" : "Nina-Carducci",
+        "id" : "Nina-Carducci, site de photographeS",
         "title" : "Nina Carducci",
         "cover": "https://i.ibb.co/WgPFxJ6/nina-carducci1.png",
         "subtitle": "Débugger, améliorer le SEO et optimiser un site de photographe à l'aide de Lighthouse et Chrome DevTools.",
@@ -73,6 +75,7 @@
             "Optimiser le SEO technique et référencement local et réseaux sociaux",
             "Améliorer l'accessibilité"
         ],
+        "problem" : "La problématique rencontrée dans ce projet concernait l'amélioration des performances pour atteindre un score supérieur à 90. Pour ce faire, j'ai analysé les résultats de l'audit Google Lighthouse et identifié les éléments nécessitant un temps de chargement important, afin de les optimiser.",
         "tags" : [
             "SEO",
             "Performance",
@@ -104,6 +107,7 @@
             "Développer une interface web avec Sass et Mettre en œuvre des animations CSS",
             "Publier une app React sur github pages"
         ],
+        "problem" : "Une des problématiques rencontrées dans ce projet concerne la gestion des composants collapsibles (collapse) dans React. Le défi était d'assurer que ces composants s'ouvrent et se ferment correctement tout en maintenant une performance optimale et une expérience utilisateur fluide. Pour résoudre cette problématique, j'ai utilisé le hook useState de React pour gérer l'état des composants collapsibles et useEffect pour effectuer les mises à jour nécessaires en réponse aux changements d'état. ",
         "tags" : [
             "React",
             "Sass"
@@ -113,7 +117,7 @@
         "year" : "2024"
     },
     {
-        "id": "Mon-Vieux-Grimoire",
+        "id": "Mon-Vieux-Grimoire, site de notation de livre",
         "title" : "Mon vieux grimoire",
         "cover": "https://i.ibb.co/9gyCJDt/mon-vieux-grimoire1.png",
         "subtitle": "Développer le back-end d'un site de notation de livres",
@@ -140,9 +144,10 @@
             "Créer un serveur HTPP avec Node et Express",
             "Mise en place d'un système d'authentification"
         ],
+        "problem" : "L'une des principales problématiques de ce projet est de garantir la sécurité des données tout en implémentant un système d'authentification pour les utilisateurs du site. Il est crucial de protéger les informations sensibles et d'assurer une communication sécurisée entre le serveur et la base de données. Pour résoudre cette problématique, plusieurs mesures ont été mises en place : Utilisation de Mongoose pour modéliser les données et Implémentation de l'authentification JWT.",
         "tags" : [
             "Node.js",
-            "Expresse.js",
+            "Express.js",
             "MongoDB",
             "Mongoose"
         ],
