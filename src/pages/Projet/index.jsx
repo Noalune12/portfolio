@@ -64,13 +64,12 @@ function Projet () {
             </div>
             <div className='project-descr-skills'>
                 <div className='project-descr'>
-                    <h3>Déscription</h3>
+                    <h3>Description</h3>
                     {thisProjet.description.map((part, index) => (
                     <span key={index} style={{ fontWeight: part.bold ? 'bold' : 'normal' }}>
                     {part.text}
                     </span>
                     ))}
-                    {/* <p>{thisProjet.description}</p> */}
                 </div>
                 <div className='project-skills'>
                     <h3>Compétences</h3>

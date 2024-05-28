@@ -17,7 +17,7 @@ function MesProjets () {
     return (
         <section className='mes-projets' id='mes-projets'>
             <h2 className='mes-projets-title'>Mes projets</h2>
-            <div className='projets-cards-container'>
+            <div className='projects-cards-container'>
             {projets.data.map((projet) => (
                 <Card
                     key={projet.id}

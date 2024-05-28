@@ -10,11 +10,23 @@
         padding-bottom: 5%;
         font-size: 30px;
         padding-top: 5%;
+        @include tablette {
+            padding-top: 8%;
+        }
+        @include mobile {
+            padding-top: 10%;
+        }
     }
     .a-propos-section {
         text-align: center;
         line-height: 30px;
         width: 70%;
+        @include tablette {
+            width: 90%;
+        }
+        @include mobile {
+            width: 95%;
+        }
         .border {
             background:
                 linear-gradient(to right, $cream-color 4px, transparent 4px) 0 0,
@@ -26,12 +38,20 @@
             background-size: 80px 80px;
             margin-bottom: 5%;
         }
-        
+
         .a-propos-texte {
             padding: 30px 30px;
             font-weight: 400;
             position: relative;
             background-color: rgba($cream-color, 0.4);
+            @include tablette {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            @include mobile {
+                font-size: 16px;
+                line-height: 24px;
+            }
             .link-a-propos {
                 color: black;
                 font-weight: 900;
@@ -40,7 +60,7 @@
                 }
             }
         }
-        
+
     }
     .a-propos-competences {
         background-color: $cream-color;
@@ -67,20 +87,31 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    gap: 5%;
+                    flex-wrap: wrap;
+                    gap: 80px;
+                    padding: 0 2%;
+                    @include tablette {
+                        gap: 50px;
+                    }
+                    @include mobile {
+                        gap: 20px;
+                    }
                     .competence-component {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
                         background-color: rgba($purple-color, 0.4);
-                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                         width: 100px;
                         height: 80px;
                         border-radius: 8px;
                         transition: box-shadow 300ms ease, transform 300ms ease;
+                        @include tablette {
+                            width: 80px;
+                        }
                         &:hover {
-                            box-shadow: 5px 10px 16px rgba(0, 0, 0, 0.3); 
+                            box-shadow: 5px 10px 16px rgba(0, 0, 0, 0.3);
                             transform: scale(1.05);
                         }
                         svg {
@@ -93,9 +124,9 @@
                             height: 35px;
                         }
                         p {
-                            margin-top: 5px; 
-                            font-size: 14px; 
-                            text-align: center; 
+                            margin-top: 5px;
+                            font-size: 14px;
+                            text-align: center;
                         }
                     }
                 }
@@ -106,13 +137,13 @@
         text-align: center;
         min-height: 100vh;
         width: 100%;
-        align-content: center;          
+        align-content: center;
     }
 }
 
-  
 
-  
 
-  
+
+
+
 

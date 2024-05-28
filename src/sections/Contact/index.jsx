@@ -80,7 +80,6 @@ function Contact () {
                     <p className='form-message'>{status}</p>
                     <button type="submit" className="submit-button">Envoyer</button>
                 </form>
-            {/* <p className='form-message'>{status}</p> */}
         </section>
     )
 

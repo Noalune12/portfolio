@@ -1,2 +1,25 @@
 $purple-color : #A59AB1;
 $cream-color : #f5f0e8;
+
+$breakpoint-mobile: 481px;
+$breakpoint-tablette: 768px;
+$breakpoint-medium-screen: 1169px;
+
+@mixin mobile {
+  @media screen and (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin tablette {
+  @media screen and (max-width: #{$breakpoint-tablette}) and (min-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin medium-screen {
+    @media screen and (max-width: #{$breakpoint-medium-screen}) {
+      @content;
+    }
+  }
+

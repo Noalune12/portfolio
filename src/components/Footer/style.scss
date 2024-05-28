@@ -20,13 +20,24 @@ footer {
             }
             svg {
                 font-size: 40px;
+                @include mobile {
+                    font-size: 30px;
+                }
             }
         }
     }
     p {
         font-weight: 700;
+        text-align: center;
+        @include mobile {
+            font-size: 14px;
+        }
     }
     a {
         color: black;
+        text-align: center;
+        @include mobile {
+            font-size: 12px;
+        }
     }
 }
