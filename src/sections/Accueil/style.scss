@@ -90,6 +90,9 @@
                 font-size: 24px;
                 letter-spacing: 5px;
               }
+              @include dev-web {
+                font-size: 34px;
+              }
         }
     }
 }

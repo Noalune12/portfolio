@@ -53,8 +53,8 @@
         "year" : "2024"
     },
     {
-        "id" : "Nina-Carducci, site de photographeS",
-        "title" : "Nina Carducci",
+        "id" : "Nina-Carducci",
+        "title" : "Nina Carducci, site de photographe",
         "cover": "https://i.ibb.co/WgPFxJ6/nina-carducci1.png",
         "subtitle": "Débugger, améliorer le SEO et optimiser un site de photographe à l'aide de Lighthouse et Chrome DevTools.",
         "description": [
@@ -117,8 +117,8 @@
         "year" : "2024"
     },
     {
-        "id": "Mon-Vieux-Grimoire, site de notation de livre",
-        "title" : "Mon vieux grimoire",
+        "id": "Mon-Vieux-Grimoire",
+        "title" : "Mon vieux grimoire, site de notation de livre",
         "cover": "https://i.ibb.co/9gyCJDt/mon-vieux-grimoire1.png",
         "subtitle": "Développer le back-end d'un site de notation de livres",
         "description" : [
