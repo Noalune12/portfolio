@@ -5,9 +5,6 @@ import LogoExpress from '../../assets/express.svg';
 import LogoLighthouse from '../../assets/google-lighthouse.svg';
 import { SiMongodb, SiVisualstudiocode } from "react-icons/si";
 
-
-
-
 const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
