@@ -3,6 +3,8 @@ import Timeline from '../../components/Timeline';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaSass, FaNodeJs, FaGit, FaGithub } from 'react-icons/fa';
 import LogoExpress from '../../assets/express.svg';
 import LogoLighthouse from '../../assets/google-lighthouse.svg';
+import LogoC from '../../assets/C.png';
+import LogoCPP from '../../assets/C++.png';
 import { SiMongodb, SiVisualstudiocode } from "react-icons/si";
 
 const scrollToSection = (id) => {
@@ -112,6 +114,19 @@ function Apropos () {
                                 <div className='competence-component'>
                                     <img src={LogoLighthouse} alt='lighthouse-logo' className='lighthouse-logo'/>
                                     <p>Google Lighthouse</p>
+                                </div>
+                            </div>
+                        </div>
+                       <div className='competences-text'>
+                            <h3>Langages de programmation</h3>
+                            <div className='competences-list'>
+                                <div className='competence-component'>
+                                    <img src={LogoC} alt='C-logo' className='C-logo'/>
+                                    <p>C</p>
+                                </div>
+                                <div className='competence-component'>
+                                    <img src={LogoCPP} alt='CPP-logo' className='CPP-logo'/>
+                                    <p>C++</p>
                                 </div>
                             </div>
                         </div>
