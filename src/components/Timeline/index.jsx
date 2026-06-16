@@ -20,17 +20,16 @@ export default function Timeline () {
     iconStyle={{ background: '#867495', color: '#f5f0e8' }}
     icon={<WorkIcon />}
   >
-    <h3 className="vertical-timeline-element-title">Architecte en Technologie du Numérique</h3>
-    <h4 className="vertical-timeline-element-subtitle">42, France</h4>
-    <ul className="timeline-list">
-        <li>Programmation bas-niveau (C, gestion de la mémoire, algorithmique)</li>
-        <li>Développement logiciel (conception, optimisation et débogage d’applications)</li>
-        <li>Systèmes et réseaux (UNIX/Linux, protocoles réseaux)</li>
-        <li>Pensée algorithmique (structuration de problèmes complexes et recherche de solutions optimisées)</li>
-        <li>Gestion de projet (organisation, deadlines, priorisation)</li>
-        <li>Autonomie et apprentissage continu</li>
-        <li>Communication technique (expliquer, documenter et partager des solutions avec des pairs)</li>
-    </ul>
+  <h3 className="vertical-timeline-element-title">Architecte en Technologie du Numérique</h3>
+  <h4 className="vertical-timeline-element-subtitle">École 42 Lyon, France</h4>
+  <ul className="timeline-list">
+    <li>Préparation du <strong>RNCP 7 – Systèmes d'information et réseaux</strong></li>
+    <li>Programmation bas-niveau (C, C++, gestion de la mémoire, algorithmique)</li>
+    <li>Développement fullstack (Go/Fiber, React, TypeScript, PostgreSQL, Redis, Docker)</li>
+    <li>Systèmes et réseaux (UNIX/Linux, protocoles réseaux)</li>
+    <li>Architecture microservices et API REST</li>
+    <li>Apprentissage en peer-learning, autonomie et documentation technique</li>
+  </ul>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
