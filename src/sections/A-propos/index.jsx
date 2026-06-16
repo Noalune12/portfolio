@@ -3,7 +3,6 @@ import Timeline from '../../components/Timeline';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaSass, FaNodeJs, FaGit, FaGithub } from 'react-icons/fa';
 import { SiTypescript, SiPostgresql, SiRedis, SiDocker, SiGo } from 'react-icons/si'
 import LogoExpress from '../../assets/express.svg';
-import LogoLighthouse from '../../assets/google-lighthouse.svg';
 import LogoC from '../../assets/C.png';
 import LogoCPP from '../../assets/C++.png';
 import { SiMongodb, SiVisualstudiocode } from "react-icons/si";
