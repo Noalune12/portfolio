@@ -1,28 +1,112 @@
 [
     {
-        "id": "Booki",
-        "title" : "Booki, site d'agence immobilière",
-        "cover": "https://i.ibb.co/tb7FYCc/booki1.webp",
-        "subtitle" : "Créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS",
+        "id": "Ostrom",
+        "title": "Ostrom, application de stockage chiffré E2EE",
+        "cover": "https://i.ibb.co/zVvWGWq5/Screenshot-from-2026-06-16-08-50-23.png",
+        "subtitle": "Application fullstack de stockage de fichiers chiffré de bout en bout en architecture microservices",
+        "description": [
+            { "text": "En équipe de 4, j'ai conçu et développé ", "bold": false },
+            { "text": "une application fullstack de stockage chiffré de bout en bout (E2EE)", "bold": true },
+            { "text": " en architecture microservices (Go/Fiber, React/TypeScript, PostgreSQL, Redis). J'ai été responsable de ", "bold": false },
+            { "text": "l'intégralité du microservice organisation", "bold": true },
+            { "text": " : création d'organisations avec cryptographie partagée (chaque org possède sa propre paire de clés RSA, la clé privée étant chiffrée par un mécanisme hybride RSA/AES propre à chaque membre), ", "bold": false },
+            { "text": "système de rôles Owner/Admin/Member avec middleware RBAC", "bold": true },
+            { "text": ", gestion des membres (invitation, changement de rôle, exclusion, départ), ", "bold": false },
+            { "text": "pipeline de succession automatique en cas de suppression de compte", "bold": true },
+            { "text": " et synchronisation temps réel via WebSockets. Côté frontend, j'ai ", "bold": false },
+            { "text": "architecturé l'ensemble du système de gestion des organisations et des fichiers", "bold": true },
+            { "text": " : explorateur de fichiers et dossiers avec navigation arborescente, hook centralisé ", "bold": false },
+            { "text": "useKeyCheck pour l'enforcement cryptographique E2EE", "bold": true },
+            { "text": ", système de notifications unifié ", "bold": false },
+            { "text": "(FeedbackMessageContainer / useFeedbackMessage)", "bold": true },
+            { "text": " et modal de confirmation asynchrone avec gestion des race conditions.", "bold": false }
+        ],
+        "skills": [
+            "Concevoir et implémenter un microservice complet en Go/Fiber (API, RBAC, Repository Pattern)",
+            "Implémenter un chiffrement hybride RSA/AES pour le partage sécurisé de clés entre membres",
+            "Développer un système de rôles et permissions (Owner/Admin/Member) avec middleware d'enforcement",
+            "Architecturer un frontend React/TypeScript avec hooks personnalisés et gestion d'état globale",
+            "Synchronisation temps réel via WebSockets et pipeline de succession automatique"
+        ],
+        "problem": "La principale problématique était de permettre le partage sécurisé des clés d'organisation entre membres sans que le serveur n'y ait jamais accès (zero-knowledge). J'ai implémenté un mécanisme d'encapsulation de clés (KEM) en deux couches : la clé privée de l'organisation est chiffrée localement avec une clé AES-GCM 256 bits, elle-même chiffrée avec la clé publique RSA-OAEP 4096 bits de chaque membre. Chaque nouveau membre reçoit sa propre copie chiffrée, sans jamais exposer la clé en clair au serveur.",
+        "tags": [
+            "Go/Fiber",
+            "React/TypeScript",
+            "PostgreSQL",
+            "Redis",
+            "Docker"
+        ],
+        "github": "https://github.com/Noalune12/ft_transcendence",
+        "year": "2026"
+    },
+    {
+        "id": "Webserv",
+        "title": "Webserv, serveur HTTP en C++",
+        "cover": "https://i.ibb.co/4ZnCzMnS/Screenshot-from-2026-06-16-08-56-26.png",
+        "subtitle": "Développer un serveur HTTP complet from scratch en C++, sans librairie externe",
+        "description": [
+            { "text": "En binôme, j'ai développé ", "bold": false },
+            { "text": "un serveur HTTP/1.1 complet en C++", "bold": true },
+            { "text": " sans aucune librairie externe. Le serveur gère ", "bold": false },
+            { "text": "les méthodes GET, POST et DELETE", "bold": true },
+            { "text": ", le parsing des requêtes HTTP, la gestion des ", "bold": false },
+            { "text": "fichiers de configuration, les CGI et le chunked transfer encoding", "bold": true },
+            { "text": ". Le projet implique une gestion fine des ", "bold": false },
+            { "text": "I/O non-bloquantes avec select/poll et la gestion de connexions multiples simultanées.", "bold": true }
+        ],
+        "skills": [
+            "Implémenter un serveur HTTP/1.1 from scratch en C++",
+            "Gérer des I/O non-bloquantes et des connexions multiples (epoll)",
+            "Parser des requêtes HTTP et fichiers de configuration",
+            "Implémenter les CGI et le chunked transfer encoding",
+            "Travailler en binôme sur un projet système bas-niveau"
+        ],
+        "problem": "La principale difficulté était la gestion des connexions multiples simultanées sans bloquer le serveur. Pour y parvenir, nous avons utilisé epoll pour surveiller les descripteurs de fichiers et traiter les événements de manière non-bloquante, tout en maintenant un état cohérent pour chaque connexion en cours.",
+        "tags": [
+            "C++",
+            "HTTP",
+            "Réseau",
+            "Systèmes"
+        ],
+        "github": "https://github.com/Noalune12/webserv",
+        "year": "2026"
+    },
+    {
+        "id": "Mon-Vieux-Grimoire",
+        "title" : "Mon vieux grimoire, site de notation de livre",
+        "cover": "https://i.ibb.co/9gyCJDt/mon-vieux-grimoire1.png",
+        "subtitle": "Développer le back-end d'un site de notation de livres",
         "description" : [
-            { "text": "Après l'étude des maquettes Figma mises à disposition (Desktop, Tablet, Mobile), j'ai dû créer la page d'accueil du site Booki tout en intégrant une ", "bold": false },
-            { "text": "interface responsive", "bold": true },
-            { "text": ". Le site doit pouvoir ", "bold": false },
-            { "text": "fonctionner sur tous les appareils et s'adapter à toutes tailles d'écran.", "bold": true }
+            { "text": "Afin de développer le back-end d'un site de notation de livre, j'ai pu créer ", "bold": false },
+            { "text": "un serveur avec Express et le connecter à une base de données MongoDB, ", "bold": true },
+            { "text": "tout en mettant en place de la structure du serveur et la gestion de la communication entre le serveur et la base de données. J'ai ainsi ", "bold": false },
+            { "text": "développé les modèles de données et implémenté des opérations CRUD ", "bold": true },
+            { "text": "(Créer, Lire, Mettre à jour, Supprimer) pour la gestion des livres et des notations. J'ai pu également implémenter ", "bold": false },
+            { "text": "un système d'authentification sécurisé  ", "bold": true },
+            { "text": "pour les utilisateurs du site. Le projet comprend également ", "bold": false},
+            { "text": "la gestion du téléchargement et de l'optimisation des images", "bold": true},
+            { "text": ", ainsi que ", "bold": false},
+            { "text": "l'ajout de fonctionnalités pour noter les livres et calculer la note moyenne. ", "bold": true},
+            { "text": "Tout au long du projet, les bonnes pratiques du ", "bold": false},
+            { "text": "Green Code ", "bold": true},
+            { "text": "pour réduire l'empreinte écologique du site ont été respecté.", "bold": false }
           ],
         "skills" : [
-            "Versionnage du projet avec Git et Github",
-            "Installer un environnement de développement front-end",
-            "Implémenter une interface responsive avec HTML et CSS",
-            "Intégrer du contenu conformément à la maquette avec HTML et CSS"
+            "Implémenter un modèle logique de données conformément à la réglementation",
+            "Mettre en œuvre des opérations CRUD de manière sécurisée",
+            "Stocker des données de manière sécurisée",
+            "Ajout d'une base de données (MongoDB)",
+            "Créer un serveur HTPP avec Node et Express",
+            "Mise en place d'un système d'authentification"
         ],
-        "problem" :"La problématique rencontrée consistait à rendre le site responsive sur trois types d'écrans différents tout en respectant la maquette initiale. Pour y parvenir, j'ai utilisé des media queries, des règles CSS qui permettent d'appliquer des styles spécifiques en fonction des caractéristiques de l'appareil, comme sa largeur d'écran, sa résolution ou son orientation.",
+        "problem" : "L'une des principales problématiques de ce projet est de garantir la sécurité des données tout en implémentant un système d'authentification pour les utilisateurs du site. Il est crucial de protéger les informations sensibles et d'assurer une communication sécurisée entre le serveur et la base de données. Pour résoudre cette problématique, plusieurs mesures ont été mises en place : Utilisation de Mongoose pour modéliser les données et Implémentation de l'authentification JWT.",
         "tags" : [
-            "HTML",
-            "CSS"
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Mongoose"
         ],
-        "github" : "https://github.com/Noalune12/Booki",
-        "link" : "https://noalune12.github.io/Booki/",
+        "github" : "https://github.com/Noalune12/mon-vieux-grimoire-backend",
         "year" : "2024"
     },
     {
@@ -117,41 +201,29 @@
         "year" : "2024"
     },
     {
-        "id": "Mon-Vieux-Grimoire",
-        "title" : "Mon vieux grimoire, site de notation de livre",
-        "cover": "https://i.ibb.co/9gyCJDt/mon-vieux-grimoire1.png",
-        "subtitle": "Développer le back-end d'un site de notation de livres",
+        "id": "Booki",
+        "title" : "Booki, site d'agence immobilière",
+        "cover": "https://i.ibb.co/tb7FYCc/booki1.webp",
+        "subtitle" : "Créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS",
         "description" : [
-            { "text": "Afin de développer le back-end d'un site de notation de livre, j'ai pu créer ", "bold": false },
-            { "text": "un serveur avec Express et le connecter à une base de données MongoDB, ", "bold": true },
-            { "text": "tout en mettant en place de la structure du serveur et la gestion de la communication entre le serveur et la base de données. J'ai ainsi ", "bold": false },
-            { "text": "développé les modèles de données et implémenté des opérations CRUD ", "bold": true },
-            { "text": "(Créer, Lire, Mettre à jour, Supprimer) pour la gestion des livres et des notations. J'ai pu également implémenter ", "bold": false },
-            { "text": "un système d'authentification sécurisé  ", "bold": true },
-            { "text": "pour les utilisateurs du site. Le projet comprend également ", "bold": false},
-            { "text": "la gestion du téléchargement et de l'optimisation des images", "bold": true},
-            { "text": ", ainsi que ", "bold": false},
-            { "text": "l'ajout de fonctionnalités pour noter les livres et calculer la note moyenne. ", "bold": true},
-            { "text": "Tout au long du projet, les bonnes pratiques du ", "bold": false},
-            { "text": "Green Code ", "bold": true},
-            { "text": "pour réduire l'empreinte écologique du site ont été respecté.", "bold": false }
+            { "text": "Après l'étude des maquettes Figma mises à disposition (Desktop, Tablet, Mobile), j'ai dû créer la page d'accueil du site Booki tout en intégrant une ", "bold": false },
+            { "text": "interface responsive", "bold": true },
+            { "text": ". Le site doit pouvoir ", "bold": false },
+            { "text": "fonctionner sur tous les appareils et s'adapter à toutes tailles d'écran.", "bold": true }
           ],
         "skills" : [
-            "Implémenter un modèle logique de données conformément à la réglementation",
-            "Mettre en œuvre des opérations CRUD de manière sécurisée",
-            "Stocker des données de manière sécurisée",
-            "Ajout d'une base de données (MongoDB)",
-            "Créer un serveur HTPP avec Node et Express",
-            "Mise en place d'un système d'authentification"
+            "Versionnage du projet avec Git et Github",
+            "Installer un environnement de développement front-end",
+            "Implémenter une interface responsive avec HTML et CSS",
+            "Intégrer du contenu conformément à la maquette avec HTML et CSS"
         ],
-        "problem" : "L'une des principales problématiques de ce projet est de garantir la sécurité des données tout en implémentant un système d'authentification pour les utilisateurs du site. Il est crucial de protéger les informations sensibles et d'assurer une communication sécurisée entre le serveur et la base de données. Pour résoudre cette problématique, plusieurs mesures ont été mises en place : Utilisation de Mongoose pour modéliser les données et Implémentation de l'authentification JWT.",
+        "problem" :"La problématique rencontrée consistait à rendre le site responsive sur trois types d'écrans différents tout en respectant la maquette initiale. Pour y parvenir, j'ai utilisé des media queries, des règles CSS qui permettent d'appliquer des styles spécifiques en fonction des caractéristiques de l'appareil, comme sa largeur d'écran, sa résolution ou son orientation.",
         "tags" : [
-            "Node.js",
-            "Express.js",
-            "MongoDB",
-            "Mongoose"
+            "HTML",
+            "CSS"
         ],
-        "github" : "https://github.com/Noalune12/mon-vieux-grimoire-backend",
+        "github" : "https://github.com/Noalune12/Booki",
+        "link" : "https://noalune12.github.io/Booki/",
         "year" : "2024"
     }
 ]
